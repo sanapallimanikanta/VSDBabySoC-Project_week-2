@@ -76,6 +76,36 @@ gtkwave rvmyth.vcd
   * `count` starts at 0 and **keeps increasing
 <img width="1223" height="687" alt="Image" src="https://github.com/user-attachments/assets/2036c30e-1d20-4298-946d-1209c61549f3" />
 
+## Waveform Explanation
+
+**1.Clock (clk)**
+   
+   The top signal is the clock.
+   
+   It alternates high and low every 5 ns (generates a square wave).
+   
+   All counting is synchronized with the rising edge of the clock.
+
+**2.Reset (reset)**
+  
+   The bottom signal is reset.
+
+   It starts high at the beginning, then goes low after ~10 ns.
+
+   While reset is high, the counter is forced to 0.
+
+   When reset goes low, the counter starts incrementing.
+
+**3.Count (count[3:0])**
+
+The middle signal is the 4-bit counter output.
+
+   Initially at 0 because of reset.
+
+   After reset goes low, it increments by 1 on every rising edge of clk.
+
+   The values are shown in hexadecimal (0 → A in the screenshot).
+
 
 ## 🎯 6. What you learned
 
