@@ -74,7 +74,7 @@ gtkwave rvmyth.vcd
   * `clk` goes up and down ⏰
   * `reset` is high first, then goes low
   * `count` starts at 0 and **keeps increasing
-
+<img width="1223" height="687" alt="Image" src="https://github.com/user-attachments/assets/2036c30e-1d20-4298-946d-1209c61549f3" />
 
 
 ## 🎯 6. What you learned
